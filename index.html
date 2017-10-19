@@ -90,7 +90,7 @@
         <section>
             <blockquote>
                 Mutation testing is a technique to evaluate the quality of your tests
-                by programmatically mutating (i.e. making a series of small modifications to)
+                by programmatically mutating by making a series of small modifications to
                 your code and ensuring that the tests no longer pass.
             </blockquote>
         </section>
@@ -102,10 +102,59 @@
                 their job</h4>
         </section>
 
+        <section>
+            <h1>So how it works?</h1>
+        </section>
+
+        <section>
+            <small>WIP</small>
+            <h3>
+                To assess the quality of a given test set, <br/>
+                these mutants are executed against the input test set <br/>
+                to see if the seeded faults can be detected.
+            </h3>
+        </section>
+
+        <section>
+            <small>WIP</small>
+
+            <ul>
+                <li>Modifies a program in small ways</li>
+                <li class="fragment">Each mutated version is called a <strong>Mutant</strong></li>
+                <li class="fragment">Mutated program has failing tests: <i class="fragment">killed
+                    mutant</i></li>
+                <li class="fragment">Mutated program passed tests: <i class="fragment">escaped
+                    mutant</i></li>
+            </ul>
+        </section>
 
         <section data-background-image="https://developer.telerik.com/wp-content/uploads/2017/01/unit-tests-broken.gif" data-background-size="800px 600px"></section>
 
-        <section data-background-image="http://media.giphy.com/media/MOWPkhRAUbR7i/giphy.gif" data-background-size="800px 426px"></section>
+        <section>
+            <p>Test suites are measured by the percentage of mutants that they kill. New tests can
+                be designed to kill additional mutants.</p>
+        </section>
+
+        <section>
+            <h2>Mutators</h2>
+        </section>
+
+        <section>
+            <h1>So what did we learn today?</h1>
+        </section>
+
+        <section data-background-image="https://static1.qmusic.medialaancdn.be/3/64/1b/16/223597/Piet_Huysentruyt.JPG">
+            <div style="background-color: rgba(0, 0, 0, 0.5); color: #fff;">
+                <ol>
+                    <li>Always write unit tests</li>
+                    <li class="fragment">Code coverage gives a false positive feeling</li>
+                    <li class="fragment">Use <a href="https://github.com/phpro/grumphp">GrumPHP</a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!--<section data-background-image="http://media.giphy.com/media/MOWPkhRAUbR7i/giphy.gif" data-background-size="800px 426px"></section>-->
 
         <section data-background-image="https://video-images.vice.com/articles/5947f16b15f3e0567c42cb3e/lede/1497888029307-GettyImages-543516096.jpeg?crop=1xw:0.84375xh;center,center&resize=1050:*" data-background-position="center">
             <div style="background-color: rgba(0, 0, 0, 0.5); color: #fff;">
