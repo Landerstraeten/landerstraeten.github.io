@@ -29,110 +29,186 @@
             <h4>I'm <a href="https://landerstraeten.be">Lander Vanderstraeten</a></h4>
             <aside class="notes">
                 <p>
-                    Consultant at PHPro<br/>
-                    Currently working for Napoleon Games
+                    I'm a consultant at PHPro and currently working for more than a year at Napoleon Games
                 </p>
             </aside>
         </section>
 
         <section>
             <h2>3 quiz questions</h2>
+            <aside class="notes">
+                <p>
+                    First of all, I would like to start by asking 3 quiz questions
+                </p>
+            </aside>
         </section>
 
         <section>
             <h3>Who thinks unit tests <br/> are waste of time?</h3>
         </section>
 
-        <section data-background-image="https://i.imgflip.com/t1bxn.jpg?a418800" data-background-size="1000px 600px"></section>
+        <section data-background-image="https://i.imgflip.com/t1bxn.jpg?a418800" data-background-size="1000px 600px">
+            <aside class="notes">
+                <p>Get the fuck out!</p>
+            </aside>
+        </section>
 
         <section>
             <h3>Who always writes unit tests?</h3>
         </section>
 
-        <section data-background-image="https://ci.memecdn.com/6242113.jpg" data-background-size="1000px 600px"></section>
+        <section data-background-image="https://ci.memecdn.com/6242113.jpg" data-background-size="1000px 600px">
+            <aside class="notes">
+                <p>
+                    Good job!
+                    Writing tests is never a waste of time.
+                    But don't forget to always keep them up to date!
+                </p>
+            </aside>
+        </section>
 
         <section>
             <h3>Who already uses mutation testing?</h3>
         </section>
 
-        <section data-background-image="https://pbs.twimg.com/media/CN6nHZ-U8AAsVRq.jpg" data-background-size="800px 600px"></section>
+        <section data-background-image="https://pbs.twimg.com/media/CN6nHZ-U8AAsVRq.jpg" data-background-size="800px 600px">
+            <aside class="notes">
+                <p>
+                    I hope to see some hands.
+                    Or who has an idea what mutation testing is, or what it does?
+                </p>
+            </aside>
+        </section>
 
         <section>
             <h4>code has bugs</h4>
             <h4 class="fragment">tests are code</h4>
             <h4 class="fragment"><span class="fragment highlight-red">tests</span> have
-                <span class="fragment highlight-red">bugs</span>!</h4>
-        </section>
-
-        <section>
-            <h3>Tests are a good tool to verify your code but how do you verify your tests?</h3>
-        </section>
-
-        <section>
-            <h3>code coverage is a start,<br/>
-                but it can give a “good” score <br/>with useless,
-                unsuspecting tests</h3>
-        </section>
-
-        <section data-background="#fff">
-            <img src="https://pbs.twimg.com/media/BjkX6v0CQAA4JNT.jpg:large" width="600px" height="400px">
-            <h3 class="fragment">All tests passed!</h3>
-        </section>
-
-        <section>
-            <h1>So how we detect?</h1>
-        </section>
-
-        <section>
-            <h1>Mutation Testing</h1>
-        </section>
-
-        <section>
-            <blockquote>
-                Mutation testing is a technique to evaluate the quality of your tests
-                by programmatically mutating by making a series of small modifications to
-                your code and ensuring that the tests no longer pass.
-            </blockquote>
-        </section>
-
-        <section>
-            <h4>If bugs are crimes</h4>
-            <h4 class="fragment">And your tests are the police</h4>
-            <h4 class="fragment">Mutations are fake crimes that let you see the police is doing
-                their job</h4>
-        </section>
-
-        <section>
-            <h1>So how it works?</h1>
-        </section>
-
-        <section>
-            <small>WIP</small>
-            <h3>
-                To assess the quality of a given test set, <br/>
-                these mutants are executed against the input test set <br/>
-                to see if the seeded faults can be detected.
-            </h3>
-        </section>
-
-        <section>
-            <small>WIP</small>
-
-            <ul>
-                <li>Modifies a program in small ways</li>
-                <li class="fragment">Each mutated version is called a <strong>Mutant</strong></li>
-                <li class="fragment">Mutated program has failing tests: <i class="fragment">killed
-                    mutant</i></li>
-                <li class="fragment">Mutated program passed tests: <i class="fragment">escaped
-                    mutant</i></li>
-            </ul>
+                <span class="fragment highlight-red">bugs</span>!
+            </h4>
+            <aside class="notes">
+                <p>
+                    So we, as developer, we create software, we write code. And we are aware that we write bugs.
+                    Nobody writes bug-free code.
+                    <br/>
+                    To prevent our application to have al lot of bugs, the smart developer writes a bunch of tests.
+                    BUT, also tests are code.
+                    <br/>
+                    Oh no, yes, your tests have bugs.
+                </p>
+            </aside>
         </section>
 
         <section data-background-image="https://developer.telerik.com/wp-content/uploads/2017/01/unit-tests-broken.gif" data-background-size="800px 600px"></section>
 
         <section>
+            <h3>
+                Tests are a good tool to verify your code<br/>
+                <span class="fragment"> but how do you verify your tests?</span>
+            </h3>
+        </section>
+
+        <section>
+            <h3>
+                Code coverage is a start,<br/>
+                <span class="fragment"> but it can give a “good” score <br/>with <u>useless tests</u></span>
+            </h3>
+            <aside class="notes">
+                <p>
+                    Some of you now think,<br/>
+                    "Nonsenses, I have a code coverage of 100%",<br/>
+                    So do you think your application is 100% bugfree now,<br/>
+                    Sorry, it's not!<br/>
+                    <br/>
+                    Code coverage measures how much lines you actually touched during the testing process!<br/>
+                </p>
+        </section>
+
+        <section data-background="#ddd">
+            <img src="https://pbs.twimg.com/media/BjkX6v0CQAA4JNT.jpg:large" width="600px" height="400px">
+            <h3 class="fragment">All tests passed!</h3>
+            <aside class="notes">
+                <p>This is what code coverage looks like in real live</p>
+            </aside>
+        </section>
+
+        <section>
+            <h1>How we detect?</h1>
+        </section>
+
+        <section data-transition="zoom" data-transition-speed="slow">
+            <h1>Mutation Testing</h1>
+        </section>
+
+        <section data-background="#ddd">
+            <blockquote>
+                Mutation testing is a technique to evaluate the quality of your tests
+                by programmatically mutating by making a series of small modifications to
+                your code and ensuring that the tests no longer pass.
+            </blockquote>
+            <aside class="notes">
+                <p>Definition</p>
+            </aside>
+        </section>
+
+        <section>
+            <h1>How it works?</h1>
+        </section>
+
+        <section>
+            <h4>If bugs are crimes</h4>
+            <h4 class="fragment">And your tests are the police</h4>
+            <h4 class="fragment">Mutations are fake crimes that let you see the police is doing their job</h4>
+            <aside class="notes">
+                <p>Let me explain this with a super basic example.</p>
+            </aside>
+        </section>
+
+        <section>
+            <h4>To assess the quality of a given test,</h4>
+            <h4 class="fragment">mutants are executed against the input test</h4>
+            <h4 class="fragment">to see if the seeded faults can be detected.</h4>
+            <aside class="notes">
+                <p>More technical explanation</p>
+            </aside>
+        </section>
+
+        <section data-background-image="https://media.giphy.com/media/TnLAlrs7f0DMQ/source.gif">
+            <h2>Mutation, Mutants, Mutafuck what?</h2>
+        </section>
+
+        <section>
+            <p>Each mutated version: <i class="fragment">Mutant</i></p>
+            <p class="fragment">Mutated program + failing tests: <i class="fragment">killed mutant</i></p>
+            <p class="fragment">Mutated program + passed tests: <i class="fragment">escaped mutant</i></p>
+            <aside class="notes">
+                <p>Modifies a program in small ways</p>
+            </aside>
+        </section>
+
+        <section data-background-color="#fff">
+            <img src="https://imgflip.com/s/meme/X-All-The-Y.jpg" class="plain" width="600px" height="400px">
+            <h2>measure all the things!</h2>
+        </section>
+
+        <section>
             <p>Test suites are measured by the percentage of mutants that they kill. New tests can
                 be designed to kill additional mutants.</p>
+            <aside class="notes">
+                <p>
+                    Other metric that code coverage
+                    MSI
+                    CI environment
+                    Set certain percentage, let a build fail if the percentage is not reached.
+                </p>
+            </aside>
+        </section>
+
+        <section>
+            <h1>How does it modify?</h1>
+            <aside class="notes">
+                <p>todo</p>
+            </aside>
         </section>
 
         <section>
@@ -140,7 +216,48 @@
         </section>
 
         <section>
-            <h1>So what did we learn today?</h1>
+            <h3>Example</h3>
+            <pre class="fragment"><code class="hljs" data-trim>
+public function foobar(int $number): int
+{
+    return $number + 1; // original
+}
+            </code></pre>
+            <pre class="fragment"><code class="hljs" data-trim>
+public function foobar(int $number): int
+{
+    return $number - 1; // mutated version
+}
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>Another example</h3>
+            <pre class="fragment"><code class="hljs" data-trim>
+public function foobar(Bar $foo): string
+{
+    if (null === $foo) { // original
+        return 'foo';
+    }
+    // ...
+}
+            </code></pre>
+            <pre class="fragment"><code class="hljs" data-trim>
+public function foobar(Bar $foo): string
+{
+    if (null !== $foo) { // mutated version
+        return 'foo';
+    }
+    // ...
+}
+            </code></pre>
+            <aside class="notes">
+                <p>This is a very valid example. if you don't have a test case where we check for the object being null. We would have an escaped test!</p>
+            </aside>
+        </section>
+
+        <section>
+            <h1>What did we learn today?</h1>
         </section>
 
         <section data-background-image="https://static1.qmusic.medialaancdn.be/3/64/1b/16/223597/Piet_Huysentruyt.JPG">
@@ -148,13 +265,21 @@
                 <ol>
                     <li>Always write unit tests</li>
                     <li class="fragment">Code coverage gives a false positive feeling</li>
-                    <li class="fragment">Use <a href="https://github.com/phpro/grumphp">GrumPHP</a>
-                    </li>
+                    <li class="fragment">Mutation testing also gives a false positive feeling</li>
                 </ol>
             </div>
+            <aside class="notes">
+                <p>
+                    Keep on writing unit tests<br/>
+                    Code coverage is a metric, that gives a false positive feeling<br/>
+                    Mutation testing is not a solution. It also gives a false positive feeling<br/>
+                    It's another metric that can give a better indication of the quality of your tests,<br/>
+                    But e.g in a mathematical formula, it's doesn't make sense to make to kill all mutants.<br/>
+                    A offset pagination function can subtract 1 from the page number before it multiplies by the limit.<br/>
+                    For me it doesn't make sense to kill the divide by limit mutant.
+                </p>
+            </aside>
         </section>
-
-        <!--<section data-background-image="http://media.giphy.com/media/MOWPkhRAUbR7i/giphy.gif" data-background-size="800px 426px"></section>-->
 
         <section data-background-image="https://video-images.vice.com/articles/5947f16b15f3e0567c42cb3e/lede/1497888029307-GettyImages-543516096.jpeg?crop=1xw:0.84375xh;center,center&resize=1050:*" data-background-position="center">
             <div style="background-color: rgba(0, 0, 0, 0.5); color: #fff;">
@@ -180,6 +305,7 @@
         controls: false,
         slideNumber: true,
         history: true,
+        transition: 'none',
 
         dependencies: [
             {src: 'plugin/markdown/marked.js'},
