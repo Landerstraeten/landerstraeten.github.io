@@ -94,7 +94,7 @@
                     To prevent our application to have al lot of bugs, the smart developer writes a bunch of tests.
                     BUT, also tests are code.
                     <br/>
-                    Oh no, yes, your tests have bugs.
+                    Oh no, yes, your tests contains bugs.
                 </p>
             </aside>
         </section>
@@ -143,8 +143,8 @@
         <section data-background="#ddd">
             <blockquote>
                 Mutation testing is a technique to evaluate the quality of your tests
-                by programmatically mutating by making a series of small modifications to
-                your code and ensuring that the tests no longer pass.
+                by programmatically mutating and making a series of small modifications to
+                your code so that the tests no longer pass.
             </blockquote>
             <aside class="notes">
                 <p>Definition</p>
@@ -234,7 +234,7 @@ public function foobar(int $number): int
         <section>
             <h3>Another example</h3>
             <pre class="fragment"><code class="hljs" data-trim>
-public function foobar(Bar $foo): string
+public function foobar(?Bar $foo): string
 {
     if (null === $foo) { // original
         return 'foo';
@@ -243,7 +243,7 @@ public function foobar(Bar $foo): string
 }
             </code></pre>
             <pre class="fragment"><code class="hljs" data-trim>
-public function foobar(Bar $foo): string
+public function foobar(?Bar $foo): string
 {
     if (null !== $foo) { // mutated version
         return 'foo';
@@ -254,6 +254,12 @@ public function foobar(Bar $foo): string
             <aside class="notes">
                 <p>This is a very valid example. if you don't have a test case where we check for the object being null. We would have an escaped test!</p>
             </aside>
+        </section>
+
+        <section data-background-image="https://video-images.vice.com/articles/5947f16b15f3e0567c42cb3e/lede/1497888029307-GettyImages-543516096.jpeg?crop=1xw:0.84375xh;center,center&resize=1050:*" data-background-position="center">
+            <div style="background-color: rgba(0, 0, 0, 0.5); color: #fff;">
+                <h1>Demo time with Infection</h1>
+            </div>
         </section>
 
         <section>
@@ -279,12 +285,6 @@ public function foobar(Bar $foo): string
                     For me it doesn't make sense to kill the divide by limit mutant.
                 </p>
             </aside>
-        </section>
-
-        <section data-background-image="https://video-images.vice.com/articles/5947f16b15f3e0567c42cb3e/lede/1497888029307-GettyImages-543516096.jpeg?crop=1xw:0.84375xh;center,center&resize=1050:*" data-background-position="center">
-            <div style="background-color: rgba(0, 0, 0, 0.5); color: #fff;">
-                <h1>Infection</h1>
-            </div>
         </section>
 
         <section>
