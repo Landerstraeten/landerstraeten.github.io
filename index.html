@@ -33,8 +33,9 @@
             <h4>I'm <a href="https://landerstraeten.be">Lander Vanderstraeten</a></h4>
             <aside class="notes">
                 <p>
-                    Consultant PHPro. Working more than a year at Napoleon Games.
+                    Consultant PHPro. Currently working Napoleon Games / Wimi Online.
                     Maintainers of Grumphp. A nice task runner and quality tool. Before git commit. Check coding styles, run unit tests.
+                    Strong interests in DDD, CQRS, ES and microservices.
                 </p>
             </aside>
         </section>
@@ -77,8 +78,7 @@
         <section data-background-image="https://pbs.twimg.com/media/CN6nHZ-U8AAsVRq.jpg" data-background-size="800px 600px">
             <aside class="notes">
                 <p>
-                    I hope to see some hands.
-                    Or who has an idea what mutation testing is, or what it does?
+                    who has an idea what mutation testing is, or what it does?
                 </p>
             </aside>
         </section>
@@ -159,7 +159,7 @@
             <h4 class="fragment">And your tests are the police</h4>
             <h4 class="fragment">Mutations are fake crimes that let you see the police is doing their job</h4>
             <aside class="notes">
-                <p>Let me explain this with a super basic example.</p>
+                <p>Let me explain this with a basic example.</p>
             </aside>
         </section>
 
@@ -205,9 +205,6 @@
 
         <section>
             <h1>How does it modify?</h1>
-            <aside class="notes">
-                <p>todo</p>
-            </aside>
         </section>
 
         <section>
@@ -219,13 +216,13 @@
             <pre class="fragment"><code class="hljs" data-trim>
 public function foobar(int $number): int
 {
-    return $number + 1; // original
+    return ++$number; // original
 }
             </code></pre>
             <pre class="fragment"><code class="hljs" data-trim>
 public function foobar(int $number): int
 {
-    return $number - 1; // mutated version
+    return --$number; // mutated version
 }
             </code></pre>
         </section>
@@ -250,9 +247,10 @@ public function foobar(?Bar $foo): string
     // ...
 }
             </code></pre>
-            <aside class="notes">
-                <p>This is a very valid example. if you don't have a test case where we check for the object being null. We would have an escaped test!</p>
-            </aside>
+        </section>
+
+        <section data-background-image="https://media.giphy.com/media/26Do6la9cIiHvIwMM/giphy.gif" data-background-position="center">
+            <h1>Timings?</h1>
         </section>
 
         <section data-background-image="https://video-images.vice.com/articles/5947f16b15f3e0567c42cb3e/lede/1497888029307-GettyImages-543516096.jpeg?crop=1xw:0.84375xh;center,center&resize=1050:*" data-background-position="center">
