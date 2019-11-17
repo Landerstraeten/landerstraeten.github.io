@@ -34,7 +34,8 @@
             <aside class="notes">
                 <p>
                     Consultant PHPro. Currently working Napoleon Games / Wimi Online.
-                    Maintainers of Grumphp. A nice task runner and quality tool. Before git commit. Check coding styles, run unit tests.
+                    Maintainers of Grumphp. A nice task runner and quality tool. Before git commit.
+                    Check coding styles, run unit tests.
                     Strong interests in DDD, CQRS, ES and microservices.
                 </p>
             </aside>
@@ -51,7 +52,7 @@
             <h3>Who thinks unit tests <br/> are waste of time?</h3>
         </section>
 
-        <section data-background-image="https://i.imgflip.com/t1bxn.jpg?a418800" data-background-size="1000px 600px">
+        <section data-background-image="./img/getout.gif" data-background-size="1000px 600px">
             <aside class="notes">
                 <p>Get the fuck out!</p>
             </aside>
@@ -61,7 +62,7 @@
             <h3>Who always writes unit tests?</h3>
         </section>
 
-        <section data-background-image="https://ci.memecdn.com/6242113.jpg" data-background-size="1000px 600px">
+        <section data-background-image="./img/awesome.gif" data-background-size="1000px 600px">
             <aside class="notes">
                 <p>
                     Good job!
@@ -75,7 +76,7 @@
             <h3>Who already uses mutation testing?</h3>
         </section>
 
-        <section data-background-image="https://pbs.twimg.com/media/CN6nHZ-U8AAsVRq.jpg" data-background-size="800px 600px">
+        <section data-background-image="./img/success.jpg" data-background-size="800px 600px">
             <aside class="notes">
                 <p>
                     who has an idea what mutation testing is, or what it does?
@@ -91,15 +92,15 @@
             </h4>
             <aside class="notes">
                 <p>
-                    Developers. Create software. Write code. Aware we write bugs. Nobody writes bug-free code.
-                    To prevent our application to have al lot of bugs, the smart developer writes a bunch of tests.
+                    Developers. Create software. Write code. Aware we write bugs. Nobody writes
+                    bug-free code.
+                    To prevent our application to have al lot of bugs, the smart developer writes a
+                    bunch of tests.
                     Tests = code.
                     Tests will contain bugs
                 </p>
             </aside>
         </section>
-
-        <section data-background-image="https://developer.telerik.com/wp-content/uploads/2017/01/unit-tests-broken.gif" data-background-size="800px 600px"></section>
 
         <section>
             <h3>
@@ -120,12 +121,13 @@
                     So do you think your application is 100% bugfree now,<br/>
                     Sorry, it's not!<br/>
                     <br/>
-                    Code coverage measures how much lines you actually touched during the testing process!<br/>
+                    Code coverage measures how much lines you actually touched during the testing
+                    process!<br/>
                 </p>
         </section>
 
         <section data-background="#ddd">
-            <img src="https://pbs.twimg.com/media/BjkX6v0CQAA4JNT.jpg:large" width="600px" height="400px">
+            <img src="./img/codecoverage.jpg" width="600px" height="400px">
             <h3 class="fragment">All tests passed!</h3>
             <aside class="notes">
                 <p>This is what code coverage looks like in real live</p>
@@ -151,13 +153,14 @@
             </aside>
         </section>
 
-        <section data-background-image="https://i.ytimg.com/vi/Ei8jzfgmWiI/maxresdefault.jpg">
+        <section data-background-image="./img/howdotheydoit.jpg">
         </section>
 
         <section>
             <h4>If bugs are crimes</h4>
             <h4 class="fragment">And your tests are the police</h4>
-            <h4 class="fragment">Mutations are fake crimes that let you see the police is doing their job</h4>
+            <h4 class="fragment">Mutations are fake crimes that let you see the police is doing
+                their job</h4>
             <aside class="notes">
                 <p>Let me explain this with a basic example.</p>
             </aside>
@@ -178,8 +181,10 @@
 
         <section>
             <p>Each mutated version: <i class="fragment">Mutant</i></p>
-            <p class="fragment">Mutated program + failing tests: <i class="fragment">killed mutant</i></p>
-            <p class="fragment">Mutated program + passed tests: <i class="fragment">escaped mutant</i></p>
+            <p class="fragment">Mutated program + failing tests: <i class="fragment">killed
+                mutant</i></p>
+            <p class="fragment">Mutated program + passed tests: <i class="fragment">escaped
+                mutant</i></p>
             <aside class="notes">
                 <p>Modifies a program in small ways</p>
             </aside>
@@ -275,8 +280,10 @@ public function foobar(?Bar $foo): string
                 <p>
                     Keep on writing unit tests<br/>
                     Code coverage is a metric, that gives a false positive feeling<br/>
-                    Mutation testing is not the solution. It also gives a false positive feeling<br/>
-                    It's another metric that can give a better indication of the quality of your tests,<br/>
+                    Mutation testing is not the solution. It also gives a false positive
+                    feeling<br/>
+                    It's another metric that can give a better indication of the quality of your
+                    tests,<br/>
                 </p>
             </aside>
         </section>
@@ -287,7 +294,8 @@ public function foobar(?Bar $foo): string
 
         <section>
             <h1>Thank you!</h1>
-            <h4><i>Lander Vanderstraeten</i></h4>
+            <h2><a href="#">Please give me feedback</a></h2>
+            <h5>Lander Vanderstraeten</h5>
         </section>
     </div>
 </div>
@@ -312,8 +320,8 @@ public function foobar(?Bar $foo): string
             {src: 'plugin/notes/notes.js', async: true},
             {
                 src: 'plugin/highlight/highlight.js', async: true, callback: function() {
-                hljs.initHighlightingOnLoad();
-            }
+                    hljs.initHighlightingOnLoad();
+                }
             }
         ]
     });
